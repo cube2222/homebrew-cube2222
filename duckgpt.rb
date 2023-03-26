@@ -5,21 +5,21 @@
 class Duckgpt < Formula
   desc "Ask questions, let GPT do the SQL."
   homepage "https://github.com/cube2222/duckgpt"
-  version "0.0.1-prerelease"
+  version "0.1.0"
   license "MPL-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/cube2222/DuckGPT/releases/download/v0.0.1-prerelease/duckgpt_0.0.1-prerelease_darwin_amd64.tar.gz"
-      sha256 "5ea3e3dd37f3e3a6676389acb64d93dee6c5380a8fa8ee0870953478e9ea52a0"
+      url "https://github.com/cube2222/DuckGPT/releases/download/v0.1.0/duckgpt_0.1.0_darwin_amd64.tar.gz"
+      sha256 "d1ebc4dc5cdac8ba773a6d1b59e5d6c396beb651f00ce54c09c482488571a88a"
 
       def install
         bin.install "duckgpt"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/cube2222/DuckGPT/releases/download/v0.0.1-prerelease/duckgpt_0.0.1-prerelease_darwin_arm64.tar.gz"
-      sha256 "6784e46717321410854ebff445b7443ad33fc0099d2dd2726392f122112a3ba7"
+      url "https://github.com/cube2222/DuckGPT/releases/download/v0.1.0/duckgpt_0.1.0_darwin_arm64.tar.gz"
+      sha256 "87943ff8fb15e944ef4e9a2248279a36b8e8d4f035e434777c3e0cf8b69314b4"
 
       def install
         bin.install "duckgpt"
@@ -28,17 +28,17 @@ class Duckgpt < Formula
   end
 
   on_linux do
-    if Hardware::CPU.intel?
-      url "https://github.com/cube2222/DuckGPT/releases/download/v0.0.1-prerelease/duckgpt_0.0.1-prerelease_linux_amd64.tar.gz"
-      sha256 "7ad4aa097ff93b147e156fb658abe59a31662201d86ee3e1b0c8d5ce5ab8ad0d"
+    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
+      url "https://github.com/cube2222/DuckGPT/releases/download/v0.1.0/duckgpt_0.1.0_linux_arm64.tar.gz"
+      sha256 "d1b70b4e1d677734e7791344d8990ec55e5b7816ea8f508b5a34cf4b95819c43"
 
       def install
         bin.install "duckgpt"
       end
     end
-    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/cube2222/DuckGPT/releases/download/v0.0.1-prerelease/duckgpt_0.0.1-prerelease_linux_arm64.tar.gz"
-      sha256 "22560c40cdefd5c9c12e7bc919b06af6b11e3526cc8bfdf29515754c878e5838"
+    if Hardware::CPU.intel?
+      url "https://github.com/cube2222/DuckGPT/releases/download/v0.1.0/duckgpt_0.1.0_linux_amd64.tar.gz"
+      sha256 "df897a881fb1404d53fb6a9f13818ad15297bed548af6b51ed5937d7f5ee8e70"
 
       def install
         bin.install "duckgpt"
