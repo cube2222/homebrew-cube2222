@@ -7,7 +7,7 @@ class Cuttlefish < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/cube2222/cuttlefish/releases/download/v0.1.0/cuttlefish_darwin_amd64.zip"
-      sha256 "19d2b32506c7a14d5625219feef117439516521b1a2b595a48da6e57be7dabbf"
+      sha256 "bae68c1ed9f2664f4155496068e40bbe2ea1ca91658be542249865d6b29c6123"
 
       def install
         bin.install "cuttlefish"
@@ -15,7 +15,7 @@ class Cuttlefish < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/cube2222/cuttlefish/releases/download/v0.1.0/cuttlefish_darwin_arm64.zip"
-      sha256 "e4628edee97a8e1241192be59b2eb669f19486ec50fb6b4692a47a1d1c34ee88"
+      sha256 "aabeca44be6ba533ec8abd7b6e4721f529efaa6aeb1ac537d2c81d25185c84e3"
 
       def install
         bin.install "cuttlefish"
