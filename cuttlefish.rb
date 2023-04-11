@@ -1,7 +1,7 @@
 class Cuttlefish < Formula
   desc "Desktop chat app for ChatGPT that uses tools."
   homepage "https://github.com/cube2222/cuttlefish"
-  version "v0.0.1-alpha1"
+  version "v0.0.1-alpha2"
   license "MPL-2.0"
 
   on_macos do
