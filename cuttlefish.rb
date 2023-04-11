@@ -1,21 +1,21 @@
 class Cuttlefish < Formula
-  desc "Desktop chat app for ChatGPT that uses tools."
+  desc "Desktop ChatGPT App that can use Tools."
   homepage "https://github.com/cube2222/cuttlefish"
-  version "v0.0.1-alpha2"
+  version "v0.1.0"
   license "MPL-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/cube2222/cuttlefish/releases/download/v0.0.1-alpha2/cuttlefish_darwin_amd64.zip"
-      sha256 "d49c0aade47916e5149b95cdf3c1253ed41deac78bad1547edbcb5ed9ed1cc04"
+      url "https://github.com/cube2222/cuttlefish/releases/download/v0.1.0/cuttlefish_darwin_amd64.zip"
+      sha256 "19d2b32506c7a14d5625219feef117439516521b1a2b595a48da6e57be7dabbf"
 
       def install
         bin.install "cuttlefish"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/cube2222/cuttlefish/releases/download/v0.0.1-alpha2/cuttlefish_darwin_arm64.zip"
-      sha256 "8f954c04eef635c0ec7d815b6e4cd37684b58b037aed49a378ea748f424b9b04"
+      url "https://github.com/cube2222/cuttlefish/releases/download/v0.1.0/cuttlefish_darwin_arm64.zip"
+      sha256 "e4628edee97a8e1241192be59b2eb669f19486ec50fb6b4692a47a1d1c34ee88"
 
       def install
         bin.install "cuttlefish"
